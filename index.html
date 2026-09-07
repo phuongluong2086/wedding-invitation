@@ -1,184 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Wedding invitation of Linh & Phuong" />
-  <title>Linh & Phuong — Wedding Invitation</title>
+  <meta name="description" content="Thiệp cưới online" />
+  <title>Hạnh & Hà — Wedding Invitation</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div id="loader" class="loader">
-    <div class="loader-inner">
-      <p class="eyebrow">A little invitation</p>
-      <h1>L <span>&</span> P</h1>
-      <button id="openInvitation" class="btn btn-dark">Open invitation</button>
-    </div>
+<body class="locked">
+
+  <div id="loader" class="opening">
+    <div class="opening-monogram">H<span>&</span>H</div>
+    <p class="opening-script">Hạnh & Hà</p>
+    <p class="opening-date">06 · 10 · 2026</p>
+    <button id="openInvitation" class="open-btn">Mở thiệp</button>
   </div>
 
-  <button id="musicToggle" class="music-toggle" aria-label="Toggle music">♫</button>
+  <button id="musicToggle" class="music-toggle" aria-label="Bật hoặc tắt nhạc">♫</button>
+
   <audio id="weddingMusic" loop preload="none">
-    <!-- Replace with your own music file if desired:
+    <!-- Đặt file nhạc tại music/wedding.mp3 rồi giữ dòng dưới -->
     <source src="music/wedding.mp3" type="audio/mpeg">
-    -->
   </audio>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
-      <div class="hero-overlay"></div>
+      <div class="hero-line line-top"></div>
+      <div class="hero-line line-bottom"></div>
+
+      <div class="hero-watermark">H<span>&</span>H</div>
+
       <div class="hero-content reveal">
-        <p class="eyebrow">WE ARE GETTING MARRIED</p>
-        <h1>Linh <span>&</span> Phuong</h1>
-        <p class="date">20 · 12 · 2026</p>
-        <p class="location">Hanoi, Vietnam</p>
-        <a href="#story" class="scroll-cue">Scroll to discover <span>↓</span></a>
+        <p class="small-caps">TRÂN TRỌNG KÍNH MỜI</p>
+        <p class="invite-script">Quý khách và gia đình</p>
+        <p class="invite-text">tới dự lễ thành hôn của hai chúng tôi</p>
+
+        <div class="names">
+          <div class="name-script">Hạnh</div>
+          <div class="amp">&</div>
+          <div class="name-script">Hà</div>
+        </div>
+
+        <p class="small-caps">HÔN LỄ ĐƯỢC TỔ CHỨC VÀO HỒI</p>
+
+        <div class="hero-date">
+          <strong>09H00 · 45</strong>
+          <span>THỨ BA · 06/10/2026</span>
+          <small>(Ngày 21 tháng 08 năm Giáp Thìn)</small>
+        </div>
+
+        <div class="venue">
+          <span>TẠI NHÀ TRAI</span>
+          <strong>Đậu Xuân · Nam Hoa Lư · Ninh Bình</strong>
+        </div>
       </div>
+
+      <a href="#invitation" class="scroll-down">↓</a>
     </section>
 
-    <section id="story" class="section story">
+    <!-- INVITATION -->
+    <section id="invitation" class="section invitation">
+      <div class="corner corner-tr"></div>
       <div class="container narrow reveal">
-        <p class="eyebrow">01 — OUR STORY</p>
-        <h2>And so, our story continues.</h2>
-        <p class="lead">
-          Two people, one beautiful journey, and a day we would love to share
-          with the people who mean the most to us.
+        <p class="small-caps">THÂN MỜI</p>
+        <h2>Ngày vui của chúng tôi</h2>
+        <p class="body-copy">
+          Sự hiện diện của Quý khách và gia đình là niềm vinh hạnh
+          và là niềm vui lớn đối với hai chúng tôi.
         </p>
-        <p>
-          From the first hello to all the little moments in between, we are
-          grateful for every chapter that brought us here. Now, we are ready
-          for the next one.
-        </p>
+        <p class="script-quote">“Một ngày thật đẹp để bắt đầu một chương mới.”</p>
       </div>
     </section>
 
-    <section class="photo-break reveal">
-      <div class="photo-placeholder">YOUR PHOTO</div>
-    </section>
-
-    <section class="section details">
+    <!-- DATE -->
+    <section class="section date-section">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">02 — THE DAY</p>
-          <h2>Save the date</h2>
+        <p class="small-caps reveal">01 — WEDDING DAY</p>
+        <h2 class="reveal">06 · 10 · 2026</h2>
+
+        <div class="info-grid">
+          <div class="info-card reveal">
+            <span>THỜI GIAN</span>
+            <h3>09:00 · 45</h3>
+            <p>Thứ Ba, ngày 06 tháng 10 năm 2026</p>
+          </div>
+
+          <div class="info-card reveal">
+            <span>ĐỊA ĐIỂM</span>
+            <h3>Tại nhà trai</h3>
+            <p>Đậu Xuân · Nam Hoa Lư · Ninh Bình</p>
+          </div>
         </div>
 
-        <div class="details-grid">
-          <article class="detail-card reveal">
-            <span class="number">01</span>
-            <h3>The Ceremony</h3>
-            <p>Sunday, 20 December 2026</p>
-            <p>16:30 — 17:30</p>
-          </article>
-          <article class="detail-card reveal">
-            <span class="number">02</span>
-            <h3>The Celebration</h3>
-            <p>Sunday, 20 December 2026</p>
-            <p>18:00 — 21:00</p>
-          </article>
-          <article class="detail-card reveal">
-            <span class="number">03</span>
-            <h3>The Venue</h3>
-            <p>Your Wedding Venue</p>
-            <p>Hanoi, Vietnam</p>
-          </article>
-        </div>
-
-        <div class="center reveal">
-          <a class="btn btn-outline" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/search/?api=1&query=Hanoi%2C%20Vietnam">
-            Open in Google Maps
-          </a>
-        </div>
+        <a class="map-button reveal"
+           href="https://www.google.com/maps/place/Nh%C3%A0+Luy%E1%BA%BFn+Chuy%E1%BB%81n/@20.2087611,105.94756,994m/data=!3m2!1e3!4b1!4m6!3m5!1s0x31367b002528c395:0xb0a3c640cf026eb6!8m2!3d20.2087611!4d105.9501349!16s%2Fg%2F11n585wcjk?hl=vi-VN&entry=ttu"
+           target="_blank" rel="noopener">
+          Xem vị trí trên Google Maps ↗
+        </a>
       </div>
     </section>
 
-    <section class="section countdown-section">
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
       <div class="container center reveal">
-        <p class="eyebrow">COUNTING DOWN TO FOREVER</p>
-        <div id="countdown" class="countdown">
-          <div><strong id="days">00</strong><span>Days</span></div>
-          <div><strong id="hours">00</strong><span>Hours</span></div>
-          <div><strong id="minutes">00</strong><span>Minutes</span></div>
-          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        <p class="small-caps">ĐẾM NGƯỢC ĐẾN NGÀY HẠNH PHÚC</p>
+        <div class="countdown">
+          <div><strong id="days">00</strong><span>Ngày</span></div>
+          <div><strong id="hours">00</strong><span>Giờ</span></div>
+          <div><strong id="minutes">00</strong><span>Phút</span></div>
+          <div><strong id="seconds">00</strong><span>Giây</span></div>
         </div>
       </div>
     </section>
 
+    <!-- GALLERY -->
     <section class="section gallery">
       <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">03 — OUR MOMENTS</p>
-          <h2>A few memories</h2>
-        </div>
+        <p class="small-caps reveal">02 — OUR MOMENTS</p>
+        <h2 class="reveal">Những khoảnh khắc</h2>
+
         <div class="gallery-grid">
-          <div class="gallery-item tall reveal"><div class="photo-placeholder">PHOTO 01</div></div>
-          <div class="gallery-item reveal"><div class="photo-placeholder">PHOTO 02</div></div>
-          <div class="gallery-item reveal"><div class="photo-placeholder">PHOTO 03</div></div>
-          <div class="gallery-item wide reveal"><div class="photo-placeholder">PHOTO 04</div></div>
+          <div class="gallery-photo reveal">ẢNH 01</div>
+          <div class="gallery-photo reveal">ẢNH 02</div>
+          <div class="gallery-photo large reveal">ẢNH 03</div>
+          <div class="gallery-photo reveal">ẢNH 04</div>
+          <div class="gallery-photo reveal">ẢNH 05</div>
         </div>
       </div>
     </section>
 
+    <!-- TIMELINE -->
     <section class="section timeline">
       <div class="container narrow">
-        <div class="section-heading reveal">
-          <p class="eyebrow">04 — WEDDING DAY</p>
-          <h2>The celebration</h2>
-        </div>
+        <p class="small-caps reveal">03 — THE CELEBRATION</p>
+        <h2 class="reveal">Ngày trọng đại</h2>
+
         <div class="timeline-list">
-          <div class="timeline-row reveal"><time>16:30</time><div><h3>Welcome</h3><p>Guests arrive and settle in.</p></div></div>
-          <div class="timeline-row reveal"><time>17:00</time><div><h3>Ceremony</h3><p>Our vows and the beginning of forever.</p></div></div>
-          <div class="timeline-row reveal"><time>18:00</time><div><h3>Dinner</h3><p>Good food, good company, happy hearts.</p></div></div>
-          <div class="timeline-row reveal"><time>19:30</time><div><h3>Celebration</h3><p>Music, laughter, and dancing.</p></div></div>
+          <div class="timeline-item reveal">
+            <time>09:00</time>
+            <div><h3>Đón khách</h3><p>Kính mời Quý khách đến chung vui.</p></div>
+          </div>
+          <div class="timeline-item reveal">
+            <time>09:45</time>
+            <div><h3>Lễ thành hôn</h3><p>Nghi lễ được cử hành tại nhà trai.</p></div>
+          </div>
+          <div class="timeline-item reveal">
+            <time>11:00</time>
+            <div><h3>Tiệc thân mật</h3><p>Cùng gia đình dùng bữa và chúc mừng.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- RSVP -->
     <section class="section rsvp">
-      <div class="container narrow center">
-        <p class="eyebrow">05 — RSVP</p>
-        <h2>Will you celebrate with us?</h2>
-        <p class="lead">Please let us know if you can join us.</p>
+      <div class="container narrow center reveal">
+        <p class="small-caps">04 — RSVP</p>
+        <h2>Hẹn gặp bạn trong ngày vui</h2>
+        <p class="body-copy">Sự hiện diện của bạn là món quà quý giá đối với chúng tôi.</p>
 
-        <form id="rsvpForm" class="rsvp-form">
-          <label>
-            Your name
-            <input type="text" name="name" placeholder="Enter your name" required>
-          </label>
-          <label>
-            Your response
-            <select name="response" required>
-              <option value="">Please select</option>
-              <option value="Joyfully accepts">Joyfully accepts</option>
-              <option value="Regretfully declines">Regretfully declines</option>
-            </select>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" placeholder="Leave a note for the couple (optional)"></textarea>
-          </label>
-          <button class="btn btn-dark" type="submit">Send RSVP</button>
-          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        <form id="rsvpForm">
+          <input name="name" placeholder="Tên của bạn" required />
+          <select name="response" required>
+            <option value="">Bạn có tham dự không?</option>
+            <option>Chắc chắn tham dự</option>
+            <option>Rất tiếc, không thể tham dự</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Lời nhắn (không bắt buộc)"></textarea>
+          <button type="submit" class="dark-button">Xác nhận</button>
+          <p id="formMessage" class="form-message"></p>
         </form>
       </div>
     </section>
 
+    <!-- CLOSING -->
     <section class="closing">
-      <div class="closing-overlay"></div>
+      <div class="closing-watermark">H<span>&</span>H</div>
       <div class="closing-content reveal">
-        <p class="eyebrow">WITH LOVE</p>
-        <h2>Thank you for being part of our story.</h2>
-        <p>We can't wait to celebrate with you.</p>
-        <div class="monogram">L <span>&</span> P</div>
-        <p class="date">20 · 12 · 2026</p>
+        <p class="small-caps">WITH LOVE</p>
+        <div class="closing-names">Hạnh <span>&</span> Hà</div>
+        <p>Cảm ơn bạn đã trở thành một phần trong câu chuyện của chúng tôi.</p>
+        <div class="closing-date">06 · 10 · 2026</div>
       </div>
     </section>
+
   </main>
 
-  <footer>Made with love · Linh & Phuong</footer>
+  <footer>Hạnh & Hà · 2026</footer>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,24 +1,25 @@
-# Wedding Invitation — HTML Template
+# Wedding Invitation — Elegant Red Editorial
 
-A responsive, animated wedding invitation landing page built with plain HTML, CSS and JavaScript.
+Thiệp cưới online HTML/CSS/JS, lấy cảm hứng từ mẫu thiết kế người dùng cung cấp:
+- nền trắng/ivory
+- đỏ burgundy
+- tên cô dâu chú rể bằng script
+- monogram lớn phía sau
+- typography serif editorial
+- đường line trang trí tối giản
+- mobile responsive
+- countdown
+- Google Maps
+- gallery
+- RSVP demo
+- nhạc nền
 
-## Files
-
-- `index.html` — page structure and content
-- `style.css` — layout, typography and animations
-- `script.js` — countdown, reveal animations, music toggle and demo RSVP
-- `images/` — add your wedding photos here
-- `music/` — add your music here
-
-## Customize
-
-1. Replace `Linh & Phuong` with your names.
-2. Change the wedding date in `script.js`.
-3. Replace the photo placeholders with `<img>` elements pointing to files in `images/`.
-4. Update venue and Google Maps link in `index.html`.
-5. Add a music file at `music/wedding.mp3`, then uncomment the `<source>` line in `index.html`.
-6. For real RSVP submissions, connect the form to a service such as Formspree, Google Forms, or your own backend.
+## Cần thay
+- Tên cô dâu/chú rể trong `index.html`
+- Ngày/giờ trong `index.html` và `script.js`
+- Địa chỉ và nội dung
+- Ảnh trong `images/`
+- File nhạc `music/wedding.mp3`
 
 ## Deploy
-
-This is a static site and can be deployed directly to Vercel or GitHub Pages.
+Push/Upload các file lên GitHub. Vercel đang kết nối repository sẽ tự động deploy bản mới.
