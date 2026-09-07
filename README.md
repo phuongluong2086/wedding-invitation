@@ -23,3 +23,15 @@ Thiệp cưới online HTML/CSS/JS, lấy cảm hứng từ mẫu thiết kế n
 
 ## Deploy
 Push/Upload các file lên GitHub. Vercel đang kết nối repository sẽ tự động deploy bản mới.
+
+
+## V3 photo mapping
+
+The current HTML expects these files in `images/`:
+- `img1.jpg` — hero/cover photo
+- `img2.jpg` — gallery
+- `img3.jpg` — gallery
+- `img4.jpg` — large gallery image
+- `img5.jpg` — gallery
+
+The gallery images open in a fullscreen lightbox when clicked.
