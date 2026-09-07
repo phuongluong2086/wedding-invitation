@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wedding invitation of Linh & Phuong" />
+  <title>Linh & Phuong — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <p class="eyebrow">A little invitation</p>
+      <h1>L <span>&</span> P</h1>
+      <button id="openInvitation" class="btn btn-dark">Open invitation</button>
+    </div>
+  </div>
+
+  <button id="musicToggle" class="music-toggle" aria-label="Toggle music">♫</button>
+  <audio id="weddingMusic" loop preload="none">
+    <!-- Replace with your own music file if desired:
+    <source src="music/wedding.mp3" type="audio/mpeg">
+    -->
+  </audio>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">WE ARE GETTING MARRIED</p>
+        <h1>Linh <span>&</span> Phuong</h1>
+        <p class="date">20 · 12 · 2026</p>
+        <p class="location">Hanoi, Vietnam</p>
+        <a href="#story" class="scroll-cue">Scroll to discover <span>↓</span></a>
+      </div>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="container narrow reveal">
+        <p class="eyebrow">01 — OUR STORY</p>
+        <h2>And so, our story continues.</h2>
+        <p class="lead">
+          Two people, one beautiful journey, and a day we would love to share
+          with the people who mean the most to us.
+        </p>
+        <p>
+          From the first hello to all the little moments in between, we are
+          grateful for every chapter that brought us here. Now, we are ready
+          for the next one.
+        </p>
+      </div>
+    </section>
+
+    <section class="photo-break reveal">
+      <div class="photo-placeholder">YOUR PHOTO</div>
+    </section>
+
+    <section class="section details">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 — THE DAY</p>
+          <h2>Save the date</h2>
+        </div>
+
+        <div class="details-grid">
+          <article class="detail-card reveal">
+            <span class="number">01</span>
+            <h3>The Ceremony</h3>
+            <p>Sunday, 20 December 2026</p>
+            <p>16:30 — 17:30</p>
+          </article>
+          <article class="detail-card reveal">
+            <span class="number">02</span>
+            <h3>The Celebration</h3>
+            <p>Sunday, 20 December 2026</p>
+            <p>18:00 — 21:00</p>
+          </article>
+          <article class="detail-card reveal">
+            <span class="number">03</span>
+            <h3>The Venue</h3>
+            <p>Your Wedding Venue</p>
+            <p>Hanoi, Vietnam</p>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <a class="btn btn-outline" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Hanoi%2C%20Vietnam">
+            Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="container center reveal">
+        <p class="eyebrow">COUNTING DOWN TO FOREVER</p>
+        <div id="countdown" class="countdown">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 — OUR MOMENTS</p>
+          <h2>A few memories</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item tall reveal"><div class="photo-placeholder">PHOTO 01</div></div>
+          <div class="gallery-item reveal"><div class="photo-placeholder">PHOTO 02</div></div>
+          <div class="gallery-item reveal"><div class="photo-placeholder">PHOTO 03</div></div>
+          <div class="gallery-item wide reveal"><div class="photo-placeholder">PHOTO 04</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section timeline">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 — WEDDING DAY</p>
+          <h2>The celebration</h2>
+        </div>
+        <div class="timeline-list">
+          <div class="timeline-row reveal"><time>16:30</time><div><h3>Welcome</h3><p>Guests arrive and settle in.</p></div></div>
+          <div class="timeline-row reveal"><time>17:00</time><div><h3>Ceremony</h3><p>Our vows and the beginning of forever.</p></div></div>
+          <div class="timeline-row reveal"><time>18:00</time><div><h3>Dinner</h3><p>Good food, good company, happy hearts.</p></div></div>
+          <div class="timeline-row reveal"><time>19:30</time><div><h3>Celebration</h3><p>Music, laughter, and dancing.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp">
+      <div class="container narrow center">
+        <p class="eyebrow">05 — RSVP</p>
+        <h2>Will you celebrate with us?</h2>
+        <p class="lead">Please let us know if you can join us.</p>
+
+        <form id="rsvpForm" class="rsvp-form">
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </label>
+          <label>
+            Your response
+            <select name="response" required>
+              <option value="">Please select</option>
+              <option value="Joyfully accepts">Joyfully accepts</option>
+              <option value="Regretfully declines">Regretfully declines</option>
+            </select>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Leave a note for the couple (optional)"></textarea>
+          </label>
+          <button class="btn btn-dark" type="submit">Send RSVP</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-overlay"></div>
+      <div class="closing-content reveal">
+        <p class="eyebrow">WITH LOVE</p>
+        <h2>Thank you for being part of our story.</h2>
+        <p>We can't wait to celebrate with you.</p>
+        <div class="monogram">L <span>&</span> P</div>
+        <p class="date">20 · 12 · 2026</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with love · Linh & Phuong</footer>
+  <script src="script.js"></script>
+</body>
+</html>
